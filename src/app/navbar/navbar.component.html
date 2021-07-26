@@ -1,0 +1,64 @@
+<nav class="navbar navbar-default header-menu scrolled-header">
+  <div class="container">
+    <div class="navbar-header">
+      <button
+        type="button"
+        class="navbar-toggle collapsed"
+        (click)="toggleNavbar()"
+      >
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="#">
+        <img
+          src="../../assets/img/new-logo.JPG"
+          alt=""
+          width="100"
+          height="20"
+        />
+      </a>
+    </div>
+
+    <div class="collapse navbar-collapse" [ngClass]="{ in: isOpen }">
+      <ul class="nav navbar-nav">
+        <li>
+          <a href="#">HOME<span class="sr-only">(current)</span></a>
+        </li>
+        <li (click)="toggleNavbar()">
+          <a href="#">LYRICS</a>
+        </li>
+        <li
+          class="dropdown"
+          [ngClass]="{ open: isDropdownOpen }"
+          (click)="toggleDropDown()"
+          (click)="toggleNavbar()"
+        >
+          <a href="#" class="dropdown-toggle" role="button"
+            >BLOGS LIST <span class="caret"></span
+          ></a>
+          <ul class="dropdown-menu" role="menu">
+            <li>
+              <a href="#">Action</a>
+            </li>
+            <li>
+              <a href="#">Another action</a>
+            </li>
+            <li>
+              <a href="#">Something else here</a>
+            </li>
+            <li class="divider"></li>
+            <li>
+              <a href="#">Separated link</a>
+            </li>
+            <li class="divider"></li>
+            <li>
+              <a href="#">One more separated link</a>
+            </li>
+          </ul>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>

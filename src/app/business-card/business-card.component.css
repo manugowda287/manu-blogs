@@ -1,0 +1,219 @@
+/* #content-wrapper {
+    margin: 30px auto 0;
+    overflow: hidden;
+}
+
+.row {
+    width: 1020px;
+}
+a, abbr, acronym, address, applet, b, big, blockquote, body, caption, center, cite, code, dd, del, dfn, div, dl, dt, em, fieldset, font, form, h1, h2, h3, h4, h5, h6, html, i, iframe, img, ins, kbd, label, legend, li, object, p, pre, q, s, samp, small, span, strike, strong, sub, sup, table, tbody, td, tfoot, th, thead, tr, tt, u, ul, var {
+    padding: 0;
+    border: 0;
+    outline: 0;
+    vertical-align: baseline;
+    background: 0 0;
+    text-decoration: none;
+}
+
+#content-wrapper > .container {
+    margin: 0 -15px;
+}
+
+#main-wrapper {
+    float: left;
+    overflow: hidden;
+    width: 66.66666667%;
+    box-sizing: border-box;
+    word-wrap: break-word;
+    padding: 0 15px;
+    margin: 0;
+}
+
+.section, .widget, .widget ul {
+    margin: 0;
+    padding: 0;
+}
+
+.featured-posts > .show-widget {
+    display: block;
+}
+
+.featured-posts > .widget {
+    display: none;
+    position: relative;
+    float: left;
+    width: 100%;
+    margin: 0 0 30px;
+}
+.section, .widget, .widget ul {
+    margin: 0;
+    padding: 0;
+}
+
+.title-wrap, .featured-posts .widget-title {
+    position: relative;
+    float: left;
+    width: 100%;
+    height: 32px;
+    display: block;
+    margin: 0 0 20px;
+    background: #161619;
+}
+
+.title-wrap > h3, .featured-posts .widget-title > h3 {
+    position: relative;
+    float: left;
+    height: 32px;
+    font-size: 15px;
+    color: #fff;
+    background: #e51515;
+    text-shadow: 1px 2px 0 rgb(0 0 0 / 15%);
+    text-transform: uppercase;
+    line-height: 32px;
+    padding: 0 12px;
+    margin: 0;
+}
+
+a.view-all {
+    float: right;
+    height: 22px;
+    font-size: 11px;
+    line-height: 22px;
+    margin-top: 5px;
+    margin-right: 5px;
+    padding: 0 10px;
+    font-weight: bold;
+    text-transform: uppercase;
+    transition: all .17s ease;
+    color: #fff;
+    background: #e51515;
+}
+a {
+    color: #e51515;
+}
+a, a:visited {
+    text-decoration: none;
+}
+
+.section, .widget, .widget ul {
+    margin: 0;
+    padding: 0;
+}
+
+dl, ul {
+    list-style-position: inside;
+    font-weight: 400;
+    list-style: none;
+}
+feat-big .item-0 {
+    float: left;
+    width: calc(50% - 10px);
+    margin: 0;
+}
+
+.feat-big li {
+    position: relative;
+    float: right;
+    width: calc(50% - 20px);
+    overflow: hidden;
+    margin: 20px 0 0;
+}
+ul li {
+    list-style: none;
+}
+.feat-big .feat-inner {
+    position: relative;
+    float: left;
+    width: 100%;
+    height: 320px;
+    overflow: hidden;
+}
+.feat-big .feat-inner .post-image-link {
+    width: 100%;
+    height: 320px;
+    margin: 0;
+}
+.feat-big .post-image-link {
+    position: relative;
+    float: left;
+    width: 80px;
+    height: 65px;
+    display: block;
+    overflow: hidden;
+    margin: 0 12px 0 0;
+}
+.post-image-link, .about-author .avatar-container, .comments .avatar-image-container {
+    background-color: rgba(155,155,155,0.05);
+    color: transparent!important;
+}
+
+.post-tag {
+    position: absolute;
+    top: 15px;
+    left: 15px;
+    height: 18px;
+    z-index: 5;
+    background-color: #e51515;
+    color: #fff;
+    font-size: 10px;
+    line-height: 18px;
+    font-weight: 700;
+    text-transform: uppercase;
+    padding: 0 6px;
+}
+
+.feat-big .item-big .post-info {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    overflow: hidden;
+    z-index: 5;
+    box-sizing: border-box;
+    padding: 15px;
+    width: 100%;
+    background-image: linear-gradient(to bottom,transparent,rgba(0,0,0,0.3));
+}
+.feat-big .item-0 .post-title {
+    font-size: 18px;
+    margin: 0 0 10px;
+}
+
+.feat-big .post-title {
+    overflow: hidden;
+    font-size: 13px;
+    font-weight: 700;
+    line-height: 1.5em;
+    margin: 0 0 5px;
+}
+.post-meta {
+    display: block;
+    overflow: hidden;
+    color: #aaa;
+    font-size: 12px;
+    font-weight: 400;
+    padding: 0 1px;
+}
+.feat-big .item-big .post-info p.post-snippet {
+    color: #9a9a9a;
+}
+
+.post-snippet {
+    position: relative;
+    display: block;
+    overflow: hidden;
+    font-size: 12px;
+    line-height: 1.6em;
+    font-weight: 400;
+    margin: 10px 0 0;
+}
+.post-meta .post-author, .post-meta .post-date {
+    float: left;
+    margin: 0 10px 0 0;
+} */
+.sticky{
+    position: fixed;
+    top: 0;
+    overflow: hidden;
+    z-index: 10;
+    width: 100%;
+  }

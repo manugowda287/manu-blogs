@@ -1,0 +1,10 @@
+
+
+.post-meta .post-date:before {
+  content: "\f017";
+}
+.post-meta span:before {
+  font-family: FontAwesome;
+  font-weight: 400;
+  margin: 0 3px 0 0;
+}
