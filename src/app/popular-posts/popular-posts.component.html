@@ -1,98 +1,40 @@
-<div
-                class="widget PopularPosts"
-                data-version="2"
-                id="PopularPosts1"
-              >
-                <div class="widget-title">
-                  <h3 class="title">Popular Posts</h3>
-                </div>
-                <div class="widget-content">
-                  <div class="post">
-                    <div class="post-content">
-                      <a
-                        class="post-image-link"
-                        href="https://flatblog-templatesyard.blogspot.com/2016/03/10-foods-that-promote-weight-loss.html"
-                      >
-                        <img
-                          alt="10 Foods That Promote Weight Loss"
-                          class="post-thumb lazy-yard"
-                          src="https://1.bp.blogspot.com/-6J0TUQwFrws/XojY8yRfDpI/AAAAAAAAIHo/Ukqmmh6liYUb6E6uirIrDmrymJhRk1K7gCNcBGAsYHQ/w80-h65-p-k-no-nu/7.webp"
-                        />
-                      </a>
-                      <div class="post-info">
-                        <h2 class="post-title">
-                          <a
-                            href="https://flatblog-templatesyard.blogspot.com/2016/03/10-foods-that-promote-weight-loss.html"
-                            >10 Foods That Promote Weight Loss</a
-                          >
-                        </h2>
-                        <div class="post-meta">
-                          <span
-                            class="post-date published"
-                            datetime="2016-03-17T00:59:00-07:00"
-                            >March 17, 2016</span
-                          >
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="post">
-                    <div class="post-content">
-                      <a
-                        class="post-image-link"
-                        href="https://flatblog-templatesyard.blogspot.com/2016/08/8-yoga-poses-you-can-do-in-your-desk.html"
-                      >
-                        <img
-                          alt="8 Yoga Poses You Can Do in Your Desk Chair"
-                          class="post-thumb lazy-yard"
-                          src="https://1.bp.blogspot.com/-K06Fbl-JAz8/XojYpTCCKGI/AAAAAAAAIGo/rHa7CHRz69UmjIBmT1sXCHQy0DUAIvgBACNcBGAsYHQ/w80-h65-p-k-no-nu/1.webp"
-                        />
-                      </a>
-                      <div class="post-info">
-                        <h2 class="post-title">
-                          <a
-                            href="https://flatblog-templatesyard.blogspot.com/2016/08/8-yoga-poses-you-can-do-in-your-desk.html"
-                            >8 Yoga Poses You Can Do in Your Desk Chair</a
-                          >
-                        </h2>
-                        <div class="post-meta">
-                          <span
-                            class="post-date published"
-                            datetime="2016-08-23T15:00:00-07:00"
-                            >August 23, 2016</span
-                          >
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="post">
-                    <div class="post-content">
-                      <a
-                        class="post-image-link"
-                        href="https://flatblog-templatesyard.blogspot.com/2016/03/7-foods-for-healthy-hair.html"
-                      >
-                        <img
-                          alt="7 Foods for Healthy Hair"
-                          class="post-thumb lazy-yard"
-                          src="https://1.bp.blogspot.com/-tE181d_K7gs/Vupfu_6tHnI/AAAAAAAADYE/OXF5cqzoXao890DJVCBdSeEMyCtdcKIjA/w80-h65-p-k-no-nu/girl-984155_960_720.jpg"
-                        />
-                      </a>
-                      <div class="post-info">
-                        <h2 class="post-title">
-                          <a
-                            href="https://flatblog-templatesyard.blogspot.com/2016/03/7-foods-for-healthy-hair.html"
-                            >7 Foods for Healthy Hair</a
-                          >
-                        </h2>
-                        <div class="post-meta">
-                          <span
-                            class="post-date published"
-                            datetime="2016-03-17T00:53:00-07:00"
-                            >March 17, 2016</span
-                          >
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
+<head>
+  <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8432158318839569"
+     crossorigin="anonymous"></script>
+</head>
+<div class="widget PopularPosts" data-version="2" id="PopularPosts2">
+  <div class="widget-title">
+    <h3 class="title">Popular Posts</h3>
+  </div>
+  <div class="widget-content">
+    <div class="post" *ngFor="let item of popularPosts; let i=index">
+      <div class="post-content">
+        <a
+          class="post-image-link"
+          [href]="item.url"
+        >
+          <img
+            alt="7 Foods for Healthy Hair"
+            class="post-thumb lazy-yard"
+            [src]="item.imageUrl"
+          />
+        </a>
+        <div class="post-info">
+          <h2 class="post-title">
+            <a
+            [href]="item.url"
+            >{{item.title}}</a
+            >
+          </h2>
+          <div class="post-meta">
+            <span
+              class="post-date published"
+              datetime="2016-03-17T00:53:00-07:00"
+              >{{item.publishedAt}}</span
+            >
+          </div>
+        </div>
+      </div>
+    </div>
+   </div>
+</div>

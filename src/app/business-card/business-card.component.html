@@ -1,3 +1,7 @@
+<head>
+  <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8432158318839569"
+     crossorigin="anonymous"></script>
+</head>
 <div class="row" id="content-wrapper" style="transform: none">
   <div class="container" style="transform: none">
     <!-- Main Wrapper -->
@@ -39,118 +43,51 @@
                   <div class="feat-inner">
                     <a
                       class="post-image-link"
-                      href="https://flatblog-templatesyard.blogspot.com/2016/03/7-foods-for-healthy-hair.html"
+                      [href]='businessCard[0].url'
                       ><img
                         class="post-thumb lazy-yard"
                         alt=""
-                        src="https://1.bp.blogspot.com/-tE181d_K7gs/Vupfu_6tHnI/AAAAAAAADYE/OXF5cqzoXao890DJVCBdSeEMyCtdcKIjA/w325-h320-p-k-no-nu/girl-984155_960_720.jpg" /></a
+                        [src]='businessCard[0].imageUrl' /></a
                     ><span class="post-tag">Business</span>
                     <div class="post-info">
                       <h2 class="post-title">
                         <a
-                          href="https://flatblog-templatesyard.blogspot.com/2016/03/7-foods-for-healthy-hair.html"
-                          >7 Foods for Healthy Hair</a
+                        [href]='businessCard[0].url'
+                          >{{businessCard[0].title}}</a
                         >
                       </h2>
                       <div class="post-meta">
-                        <span class="post-author">Sora Blogging Tips </span
-                        ><span class="post-date">March 17, 2016</span>
+                        <span class="post-author">{{businessCard[0].author}} </span
+                        ><span class="post-date">{{businessCard[0].publishedAt}}</span>
                       </div>
-                      <p class="post-snippet">
-                        Lorem Ipsum is simply dummy text of the printing and
-                        typesetting industry. Lorem Ipsu…
-                      </p>
                     </div>
                   </div>
                 </li>
-                <li class="feat-item item-small item-1">
+                <li *ngFor="let item of businessCard | slice:1; let i=index" [class]="'feat-item item-small item-'+(i + 1)">
                   <a
                     class="post-image-link"
-                    href="https://flatblog-templatesyard.blogspot.com/2016/03/business-man-analyzing-graphs-on-tablet.html"
+                    [href]="item.url"
                     ><img
                       class="post-thumb lazy-yard"
                       alt=""
-                      src="https://4.bp.blogspot.com/-BlBi18JGkEA/Vupbk40a0UI/AAAAAAAADXk/rydm_x2vsJURxIq763HgLebaYXvmhrnQA/w80-h65-p-k-no-nu/person-731479_960_720.jpg"
+                      [src]="item.imageUrl"
                   /></a>
                   <div class="post-info">
                     <h2 class="post-title">
                       <a
-                        href="https://flatblog-templatesyard.blogspot.com/2016/03/business-man-analyzing-graphs-on-tablet.html"
-                        >Business man analyzing graphs on a tablet</a
+                        [href]="item.url"
+                        >{{item.title}}</a
                       >
                     </h2>
                     <div class="post-meta">
-                      <span class="post-date">March 17, 2016</span>
+                      <span class="post-date">{{item.publishedAt}}</span>
                     </div>
                   </div>
                 </li>
-                <li class="feat-item item-small item-2">
-                  <a
-                    class="post-image-link"
-                    href="https://flatblog-templatesyard.blogspot.com/2016/03/cars-waiting-pedestrians-cross-street.html"
-                    ><img
-                      class="post-thumb lazy-yard"
-                      alt=""
-                      src="https://2.bp.blogspot.com/-C2ZNH3JwldA/Vupbf-HopaI/AAAAAAAADXU/xq1cJrP0LJMEylkyCr76kPNm-bxo0-7og/w80-h65-p-k-no-nu/city-1150026_960_720.jpg"
-                  /></a>
-                  <div class="post-info">
-                    <h2 class="post-title">
-                      <a
-                        href="https://flatblog-templatesyard.blogspot.com/2016/03/cars-waiting-pedestrians-cross-street.html"
-                        >Cars waiting pedestrians cross the street</a
-                      >
-                    </h2>
-                    <div class="post-meta">
-                      <span class="post-date">March 17, 2016</span>
-                    </div>
-                  </div>
-                </li>
-                <li class="feat-item item-small item-3">
-                  <a
-                    class="post-image-link"
-                    href="https://flatblog-templatesyard.blogspot.com/2016/03/tablet-on-table-showing-calendar.html"
-                    ><img
-                      class="post-thumb lazy-yard"
-                      alt=""
-                      src="https://1.bp.blogspot.com/-keqVlJeDxRA/Vupbj8ebLMI/AAAAAAAADXg/jEq7fAGhLyEO13ayr69hPg_c-m5yK1-Mw/w80-h65-p-k-no-nu/imac-605421_960_720.jpg"
-                  /></a>
-                  <div class="post-info">
-                    <h2 class="post-title">
-                      <a
-                        href="https://flatblog-templatesyard.blogspot.com/2016/03/tablet-on-table-showing-calendar.html"
-                        >Tablet on a table showing calendar</a
-                      >
-                    </h2>
-                    <div class="post-meta">
-                      <span class="post-date">March 17, 2016</span>
-                    </div>
-                  </div>
-                </li>
-                <li class="feat-item item-small item-4">
-                  <a
-                    class="post-image-link"
-                    href="https://flatblog-templatesyard.blogspot.com/2016/03/business-man-reading-newspaper.html"
-                    ><img
-                      class="post-thumb lazy-yard"
-                      alt=""
-                      src="https://4.bp.blogspot.com/-hRZbMTprGYM/VupbiPgYX-I/AAAAAAAADXc/ghlbMrG6NxgLTqZOyGb3FDmqvuu584_ZQ/w80-h65-p-k-no-nu/business-man-1031755_960_720.jpg"
-                  /></a>
-                  <div class="post-info">
-                    <h2 class="post-title">
-                      <a
-                        href="https://flatblog-templatesyard.blogspot.com/2016/03/business-man-reading-newspaper.html"
-                        >Business man reading newspaper</a
-                      >
-                    </h2>
-                    <div class="post-meta">
-                      <span class="post-date">March 17, 2016</span>
-                    </div>
-                  </div>
-                </li>
-              </ul>
+               </ul>
             </div>
           </div>
-          <div class="widget HTML show-slider" data-version="2" id="HTML71">
+          <!-- <div class="widget HTML show-slider" data-version="2" id="HTML71">
             <div class="widget-title">
               <h3 class="title">Slider</h3>
             </div>
@@ -496,8 +433,8 @@
                 </div>
               </ul>
             </div>
-          </div>
-          <div class="widget HTML show-widget" data-version="2" id="HTML13">
+          </div> -->
+          <!-- <div class="widget HTML show-widget" data-version="2" id="HTML13">
             <div class="widget-title">
               <h3 class="title">Fashion</h3>
               <a
@@ -579,7 +516,7 @@
                 </li>
               </ul>
             </div>
-          </div>
+          </div> -->
           <div
             class="widget HTML col-width show-widget"
             data-version="2"
@@ -597,52 +534,48 @@
                   <div class="feat-inner">
                     <a
                       class="post-image-link"
-                      href="https://flatblog-templatesyard.blogspot.com/2016/03/girl-looking-at-mountains-in-her-green.html"
+                      [href]="sportsCard[0].url"
                       ><img
                         class="post-thumb lazy-yard"
                         alt=""
-                        src="https://1.bp.blogspot.com/-JimZDFhdozw/VupVELDw14I/AAAAAAAADWI/CqDCQKZbTAseFWJg_UgsScbdSGH7QjEcg/w320-h180-p-k-no-nu/kayaking-918464_960_720.jpg" /></a
+                        [src]="sportsCard[0].imageUrl" /></a
                     ><span class="post-tag">Nature</span>
                     <div class="post-info">
                       <h2 class="post-title">
                         <a
-                          href="https://flatblog-templatesyard.blogspot.com/2016/03/girl-looking-at-mountains-in-her-green.html"
-                          >Girl looking at the mountains in her green kayak</a
+                          [href]="sportsCard[0].url"
+                          >{{sportsCard[0].title}}</a
                         >
                       </h2>
                       <div class="post-meta">
-                        <span class="post-author">Sora Blogging Tips </span
-                        ><span class="post-date">March 17, 2016</span>
+                        <span class="post-author">{{sportsCard[0].author}} </span
+                        ><span class="post-date">{{sportsCard[0].publishedAt}}</span>
                       </div>
-                      <p class="post-snippet">
-                        Lorem Ipsum is simply dummy text of the printing and
-                        typesetting industry. Lorem Ipsu…
-                      </p>
                     </div>
                   </div>
                 </li>
-                <li class="feat-item item-small item-1">
+                <li *ngFor="let item of sportsCard | slice:1; let i=index" [class]="'feat-item item-small item-'+(i + 1)">
                   <a
                     class="post-image-link"
-                    href="https://flatblog-templatesyard.blogspot.com/2016/03/man-climbing-sloping-mountain.html"
+                    [href]="item.url"
                     ><img
                       class="post-thumb lazy-yard"
                       alt=""
-                      src="https://4.bp.blogspot.com/-GpvEjj-56Jk/VupW1hQ9COI/AAAAAAAADWc/Z6ULsbZRkDU9Xyd20-pwX1rPzbxaOut4g/w80-h65-p-k-no-nu/climber-984380_960_720.jpg"
+                      [src]="item.imageUrl"
                   /></a>
                   <div class="post-info">
                     <h2 class="post-title">
                       <a
-                        href="https://flatblog-templatesyard.blogspot.com/2016/03/man-climbing-sloping-mountain.html"
-                        >Man climbing sloping mountain</a
+                        [href]="item.url"
+                        >{{item.title}}</a
                       >
                     </h2>
                     <div class="post-meta">
-                      <span class="post-date">March 17, 2016</span>
+                      <span class="post-date">{{item.publishedAt}}</span>
                     </div>
                   </div>
                 </li>
-                <li class="feat-item item-small item-2">
+                <!-- <li class="feat-item item-small item-2">
                   <a
                     class="post-image-link"
                     href="https://flatblog-templatesyard.blogspot.com/2016/03/baseball-player-running-game-field.html"
@@ -662,7 +595,7 @@
                       <span class="post-date">March 17, 2016</span>
                     </div>
                   </div>
-                </li>
+                </li> -->
               </ul>
             </div>
           </div>
@@ -685,52 +618,49 @@
                   <div class="feat-inner">
                     <a
                       class="post-image-link"
-                      href="https://flatblog-templatesyard.blogspot.com/2016/03/business-man-analyzing-graphs-on-tablet.html"
+                      [href]="technologyCard[0].url"
                       ><img
                         class="post-thumb lazy-yard"
                         alt=""
-                        src="https://4.bp.blogspot.com/-BlBi18JGkEA/Vupbk40a0UI/AAAAAAAADXk/rydm_x2vsJURxIq763HgLebaYXvmhrnQA/w320-h180-p-k-no-nu/person-731479_960_720.jpg" /></a
+                        [src]="technologyCard[0].imageUrl"
+                        /></a
                     ><span class="post-tag">Business</span>
                     <div class="post-info">
                       <h2 class="post-title">
                         <a
-                          href="https://flatblog-templatesyard.blogspot.com/2016/03/business-man-analyzing-graphs-on-tablet.html"
-                          >Business man analyzing graphs on a tablet</a
+                        [href]="technologyCard[0].url"
+                          >{{technologyCard[0].title}}</a
                         >
                       </h2>
                       <div class="post-meta">
-                        <span class="post-author">Sora Blogging Tips </span
-                        ><span class="post-date">March 17, 2016</span>
+                        <span class="post-author">{{technologyCard[0].author}} </span
+                        ><span class="post-date">{{technologyCard[0].publishedAt}}</span>
                       </div>
-                      <p class="post-snippet">
-                        Lorem Ipsum is simply dummy text of the printing and
-                        typesetting industry. Lorem Ipsu…
-                      </p>
                     </div>
                   </div>
                 </li>
-                <li class="feat-item item-small item-1">
+                <li *ngFor="let item of technologyCard | slice:1; let i=index" [class]="'feat-item item-small item-'+(i + 1)">
                   <a
                     class="post-image-link"
-                    href="https://flatblog-templatesyard.blogspot.com/2016/03/cars-waiting-pedestrians-cross-street.html"
+                    [href]="item.url"
                     ><img
                       class="post-thumb lazy-yard"
                       alt=""
-                      src="https://2.bp.blogspot.com/-C2ZNH3JwldA/Vupbf-HopaI/AAAAAAAADXU/xq1cJrP0LJMEylkyCr76kPNm-bxo0-7og/w80-h65-p-k-no-nu/city-1150026_960_720.jpg"
+                      [src]="item.imageUrl"
                   /></a>
                   <div class="post-info">
                     <h2 class="post-title">
                       <a
-                        href="https://flatblog-templatesyard.blogspot.com/2016/03/cars-waiting-pedestrians-cross-street.html"
-                        >Cars waiting pedestrians cross the street</a
+                        [href]="item.url"
+                        >{{item.title}}</a
                       >
                     </h2>
                     <div class="post-meta">
-                      <span class="post-date">March 17, 2016</span>
+                      <span class="post-date">{{item.publishedAt}}</span>
                     </div>
                   </div>
                 </li>
-                <li class="feat-item item-small item-2">
+                <!-- <li class="feat-item item-small item-2">
                   <a
                     class="post-image-link"
                     href="https://flatblog-templatesyard.blogspot.com/2016/03/tablet-on-table-showing-calendar.html"
@@ -750,13 +680,12 @@
                       <span class="post-date">March 17, 2016</span>
                     </div>
                   </div>
-                </li>
+                </li> -->
               </ul>
             </div>
           </div>
         </div>
         <div class="clearfix"></div>
-        
       </div>
     </div>
     <!-- Sidebar Wrapper -->
@@ -790,8 +719,8 @@
           name="Sidebar Right (B)"
         >
           <app-popular-posts></app-popular-posts>
-          <app-subscribe-us></app-subscribe-us>
-          <app-technology-posts></app-technology-posts>
+          <!-- <app-subscribe-us></app-subscribe-us> -->
+          <!-- <app-technology-posts></app-technology-posts> -->
         </div>
       </div>
     </div>

@@ -24,12 +24,15 @@
     <div class="collapse navbar-collapse" [ngClass]="{ in: isOpen }">
       <ul class="nav navbar-nav">
         <li>
-          <a href="#">HOME<span class="sr-only">(current)</span></a>
+          <a href="#">Home<span class="sr-only">(current)</span></a>
+        </li>
+        <li>
+          <a href="#">Blogs</a>
         </li>
         <li (click)="toggleNavbar()">
-          <a href="#">LYRICS</a>
+          <a href="#">Lyrics</a>
         </li>
-        <li
+        <!-- <li
           class="dropdown"
           [ngClass]="{ open: isDropdownOpen }"
           (click)="toggleDropDown()"
@@ -57,6 +60,18 @@
               <a href="#">One more separated link</a>
             </li>
           </ul>
+        </li> -->
+        <li>
+          <a routerLink="/about-us">About Us</a>
+        </li>
+        <li>
+          <a routerLink="/contact-us">Contact Us</a>
+        </li>
+        <li>
+          <a routerLink="/disclaimer">Disclaimer</a>
+        </li>
+        <li>
+          <a routerLink="/privacy-policy">Privacy Policy</a>
         </li>
       </ul>
     </div>
